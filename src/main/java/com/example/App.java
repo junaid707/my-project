@@ -19,6 +19,10 @@ public class App {
         return "Hello from Spring Boot Docker App!";
     }
 
+    public String getStatus() {
+        return "OK";
+    }
+
     @PostConstruct
     public void init() {
         log.info("Java app started");
